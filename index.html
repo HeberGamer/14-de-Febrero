@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín del Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Reproductor de música (ahora con id para controlarlo con JavaScript) -->
+    <audio id="miCancion">
+        <source src="cancion.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Fondo de flores -->
+        <div class="background">
+            <img src="fondo.png" alt="Fondo de flores" class="background-image">
+        </div>
+
+        <!-- Botones -->
+        <div class="buttons">
+            <button id="flor1" class="btn">🌸 Flor 1</button>
+            <button id="flor2" class="btn">🌸 Flor 2</button>
+        </div>
+
+        <!-- Imagen con mensaje -->
+        <div id="imagenMensaje" class="hidden">
+            <img src="nosotros.jpg" alt="Imagen de nosotros" class="image">
+            <p class="mensaje">"Eres la casualidad más bonita que<br>llegó a mi vida y quiero hacer de ti<br>mi destino." - Farid Dieck</p>
+            <p class="mensaje">Se que no es mucho pero lo hice con amor,<br>te amo y espero te haya encantado.❤️<br>FELIZ 14 DE FEBRERO.</p>
+        </div>
+
+        <!-- Botón para mostrar imagen con mensaje y reproducir música -->
+        <button id="mostrarImagen" class="btn" onclick="mostrarMensaje()">Ver Mensaje</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
